@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="//libs.cdnjs.net/jquery/2.2.1/jquery.js"></script>
+    <script src="//libs.cdnjs.net/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="//libs.cdnjs.net/jquery-validate/1.14.0/localization/messages_zh.js">
+    </script>
+
+
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/uikit/2.25.0/css/uikit.css" />
+    <script src="//cdn.bootcss.com/uikit/2.25.0/js/uikit.js"></script>
+    <link rel="stylesheet" href="uikit.min.css" />
+    <script src="jquery.js"></script>
+    <script src="uikit.min.js"></script>
+</head>
+<dialog id="log">
+    <div class="cd-user-modal">
+        <div class="cd-user-modal-container">
+            <ul class="cd-switcher">
+                <li><a href="#0">学生登录</a></li>
+                <li><a href="#0">教工登录</a></li>
+            </ul>
+
+            <div id="cd-login"> <!-- 登录表单 -->
+                <form class="cd-form" id="signin-form" action="signin.php" method="post">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signin-username">用户名</label>
+                        <input class="full-width has-padding has-border" name="signinUsername" id="signin-username" type="text" placeholder="输入用户名">
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">密码</label>
+                        <input class="full-width has-padding has-border" name="signinPassword" id="signin-password" type="password"  placeholder="输入密码">
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width2" type="submit" value="登 录">
+                    </p>
+                </form>
+            </div>
+
+            <div id="cd-signup"> <!-- 注册表单 -->
+                <form action="signup.php" method="post" class="cd-form" id="signup-form"  >
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signup-username">用户名</label>
+                        <input class="signup full-width has-padding has-border" name="signupUsername" id="signup-username" type="text" placeholder="输入用户名">
+                    </p>
+
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">密码</label>
+                        <input class="signup full-width has-padding has-border"name="signupPassword" id="signup-password" type="password"  placeholder="输入密码">
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="confirm-password">密码</label>
+                        <input class="signup full-width has-padding has-border"id="confirm-password" name="confirmPassword" type="password"  placeholder="输入密码">
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signup-email">邮箱</label>
+                        <input class="signup full-width has-padding has-border" name="signupEmail" id="signup-email" type="email" placeholder="输入邮箱">
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-phone">联系方式</label>
+                        <input class="signup full-width has-padding has-border" name="signupPhoneNumber" id="signup-phone"   placeholder="输入手机号码">
+                    </p>
+
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-address">地址</label>
+                        <input class="signup full-width has-padding has-border" name="signupAddress" id="signup-address" type="text"  placeholder="输入您的住址">
+                    </p>
+
+                    <p class="fieldset">
+                        <input class="full-width2" type="submit" value="注册新用户" name="submit">
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</dialog>
+
+
+<body>
+
+</body>
+</html>
